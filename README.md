@@ -1,6 +1,6 @@
 ## Python Sorting Algorithm Comparison Tool
 
-#### Simple Python script that takes a list of numbers from the user and sorts it using a selected sorting algorithm. This program is also designed to compare different sorting algortihms by applying them to the same input and measuring their execution time.
+#### Simple Python script that takes a list of numbers from the user and sorts it using a selected sorting algorithm. This program is also designed to compare different sorting algortihms by applying them to the same input and measuring and displaying their execution time.
 
 ### Supported Algorithms
 - Bubble Sort
