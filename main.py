@@ -1,3 +1,5 @@
+import time
+
 def BubbleSort(x):
     n = len(x)
     for i in range(n-1):
@@ -119,17 +121,35 @@ confirmation = input("Enter Y/N to proceed/cancel.")
 
 if confirmation.lower() == "y":
     if(choice == 1):
+        startTime = time.perf_counter()
         print(BubbleSort(lst))
+        endTime = time.perf_counter()
+        print(f"Time taken: {(endTime-startTime) * 1000:.3f} ms")
     if (choice == 2):
+        startTime = time.perf_counter()
         print(InsertionSort(lst))
+        endTime = time.perf_counter()
+        print(f"Time taken: {(endTime - startTime) * 1000:.3f} ms")
     if (choice == 3):
+        startTime = time.perf_counter()
         print(SelectionSort(lst))
+        endTime = time.perf_counter()
+        print(f"Time taken: {(endTime - startTime) * 1000:.3f} ms")
     if (choice == 4):
+        startTime = time.perf_counter()
         print(MergeSort(lst))
+        endTime = time.perf_counter()
+        print(f"Time taken: {(endTime - startTime) * 1000:.3f} ms")
     if (choice == 5):
+        startTime = time.perf_counter()
         print(QuickSort(lst))
+        endTime = time.perf_counter()
+        print(f"Time taken: {(endTime - startTime) * 1000:.3f} ms")
     if(choice == 6):
+        startTime = time.perf_counter()
         print(sorted(lst))
+        endTime = time.perf_counter()
+        print(f"Time taken: {(endTime - startTime) * 1000:.3f} ms")
 else:
     raise Exception("Sorting Cancelled.")
 
